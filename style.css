@@ -1,1 +1,35 @@
 *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#253247;background:#f7f9fc;line-height:1.7}.container{max-width:1050px;margin:auto;padding:0 24px}header{background:#12345a;color:#fff;padding:65px 0}header h1{font-size:36px;margin:0 0 8px}header p{color:#d3dfed;margin:0}main{padding-top:55px!important;padding-bottom:80px!important}h2{font-size:25px;margin-bottom:20px}.intro{max-width:750px;margin-bottom:55px}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #e1e6ed;border-radius:10px;padding:28px;box-shadow:0 4px 14px rgba(0,0,0,.04)}.number{color:#3574ad;font-size:14px;font-weight:bold}.card h3{margin:14px 0;font-size:21px}.card p{font-size:15px;color:#566274;min-height:110px}.button{display:inline-block;color:#155a99;text-decoration:none;font-weight:bold;margin-top:12px}.button:hover{text-decoration:underline}footer{text-align:center;padding:25px;background:#eaf0f6;color:#667487;font-size:13px}@media(max-width:700px){header h1{font-size:28px}.projects{grid-template-columns:1fr}.card p{min-height:0}}
+
+
+
+/* Project card improvements */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card p {
+  min-height: 0;
+  flex-grow: 1;
+}
+
+.card .button {
+  margin-top: 12px;
+}
+
+.card .button + .button {
+  margin-top: 6px;
+}
+
+
+
+.video-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+}
